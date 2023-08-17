@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
     <body>
         <div class="banner">
+            <img class="bannerImage" href="olena-sergienko-r0M9HrfJMBM-unsplash.jpg"><img>
             <div class="logo">
-                <svg class="logoSVG"></svg>
-                <h1 class="logoName"></h1>
+                <img class="logoSVG" ></img>
+                <h1 class="logoName">NATRE</h1>
             </div>
-            <p id="photoDescription"></p>
+            <p id="photoDescription">Photo by <a>Olena Sergienko</a> on <a>Unsplash</a></p>
         </div>
         <div class="main">
-            <p class="mainDescription"><span class="italy"></span></p>
-            <p class="mainDescription"><span class="italy"></span></p>
+            <p class="mainDescription">This is not a real service! You know you need
+                something like this in your life to help you realize your biggest dreams!
+            </p>
+                
+            <p class="mainDescription">Sign up <span class="italy">now</span> to get started.</p>
+            <p class="mainDescription">You <span class="italy">know</span> you want to.</p>
             <div class="form">
                 <h3></h3>
                 <form action="#" method="post">
-                    <div class="question"><label for="" class="questionLabel"></label><input type="text" class="questionInput"></div>
-                    <div class="question"><label for="" class="questionLabel"></label><input type="text" class="questionInput"></div>
-                    <div class="question"><label for="" class="questionLabel"></label><input type="text" class="questionInput"></div>
-                    <div class="question"><label for="" class="questionLabel"></label><input type="text" class="questionInput"></div>
-                    <div class="question"><label for="" class="questionLabel"></label><input type="text" class="questionInput"></div>
-                    <div class="question"><label for="" class="questionLabel"></label><input type="text" class="questionInput"></div>
+                    <div class="question"><label for="First Name" class="questionLabel"></label><input type="text" id="First Name" name="first name" ></div>
+                    <div class="question"><label for="Last Name" class="questionLabel"></label><input type="text" id="Last Name" name="last name" ></div>
+                    <div class="question"><label for="Email" class="questionLabel"></label><input type="email" id="Email" name="email"></div>
+                    <div class="question"><label for="Phone Number" class="questionLabel"></label><input type="tel"id="Phone Number" name="phone number"></div>
+                    <div class="question"><label for="Password" class="questionLabel"></label><input type="password" id="Password" name="password"></div>
+                    <div class="question"><label for="Confirm Password" class="questionLabel"></label><input type="password"id="Confirm Password" name="confirm password"></div>
                 </form>
             </div>
-            <button class="submitButton" type="submit">Submit forms!</button><a href="" id="signInLink"></a></div>
+            <button class="submitButton" type="submit">Submit forms!</button>
+            <p class="loginText">Already have an account? <a href="" id="signInLink">Log In!</a></p>
+        </div>
     </body>
 </html>
