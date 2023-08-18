@@ -1,20 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+:root
+{
+    --whiteText: rgb(212, 212, 212);
+    --photoDesc: rgb(241, 241, 241);
+    font-size: 16px;
+}
 body
 {
     display: flex;
     flex-direction: row;
     height: 100vh;
 }
+img
+{
+    border: none;
+}
+
 .banner
 {
-    height:100%;
+    height: auto;
+    position: relative;
+    width: 500px;
+    min-width: 250px;
 }
-.blur
+.bannerImage
 {
     height: 100%;
     width: 100%;
-    filter: blur(1px);
+    object-fit: cover;
+    filter: brightness(70%);
+}
+.bannerContent
+{
+    top: 25%;
+    height: 73%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
 }
 .logo
 {
-    filter: blur(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: var(--whiteText);
+    fill: rgb(212, 212, 212);
+}
+.logoSVG
+{
+    height: 70px;
+    width: 70px;
+}
+.logoName
+{
+    font-family: 'Black Ops One', cursive;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+#photoDescription
+{
+    color: var(--photoDesc);
+    text-align: center;
+    
+
+}
+.bannerLink:hover, .bannerLink:visited, .bannerLink
+{
+    color: var(--photoDesc);
+}
+
+.bannerLink
+{
+    text-decoration: underline;
+}
+.bannerLink:hover
+{
+    text-decoration: none;
+}
+.bannerLink:visited
+{
+    text-decoration: underline;
 }
