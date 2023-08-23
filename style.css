@@ -5,6 +5,7 @@
     --whiteText: rgb(212, 212, 212);
     --photoDesc: rgb(241, 241, 241);
     font-size: 16px;
+    background-color: var(--whiteText);
 }
 body
 {
@@ -12,38 +13,25 @@ body
     flex-direction: row;
     height: 100vh;
 }
-img
-{
-    border: none;
-}
-
 .banner
 {
+    background-image: url("photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     height: auto;
-    position: relative;
-    width: 500px;
+    width: 700px;
     min-width: 250px;
-}
-.bannerImage
-{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(70%);
-}
-.bannerContent
-{
-    top: 25%;
-    height: 73%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    position: absolute;
 }
+
 .logo
 {
+    margin-top: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,10 +53,9 @@ img
 }
 #photoDescription
 {
+    margin-bottom: 10%;
     color: var(--photoDesc);
     text-align: center;
-    
-
 }
 .bannerLink:hover, .bannerLink:visited, .bannerLink
 {
@@ -86,4 +73,68 @@ img
 .bannerLink:visited
 {
     text-decoration: underline;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainDescriptionText
+{
+    padding: 10px 30px;
+    width: 80%;
+    font-size: 1.4rem;
+}
+.mainDescription
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.mainDescription+p+p
+{
+    margin-top: 10px;
+}
+.form
+{
+    padding: 30px 30px;
+    background-color: white;
+    width: auto;
+    margin: 20px 0px;
+}
+h3
+{
+    margin: 0px 0px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+.questions
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 70%;
+    margin-left: 10px;
+}
+.question
+{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+.submitButton
+{
+    width: 20%;
+    height: 5%;
+    align-self: flex-start;
+    margin-left: 30px;
+}
+.loginText
+{
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 1.1rem;
 }
