@@ -30,15 +30,29 @@
             <div class="form">
                 <h3>Let's do this!</h3>
                 <form action="#" method="post" class="questions">
-                    <div class="question"><label for="First Name" class="questionLabel">First Name</label><input type="text" id="First Name" name="first name" ></div>
-                    <div class="question"><label for="Last Name" class="questionLabel">Last Name</label><input type="text" id="Last Name" name="last name" ></div>
-                    <div class="question"><label for="Email" class="questionLabel"></label>Email<input type="email" id="Email" name="email"></div>
-                    <div class="question"><label for="Phone Number" class="questionLabel">Phone Number</label><input type="tel"id="Phone Number" name="phone number"></div>
-                    <div class="question"><label for="Password" class="questionLabel">Password</label><input type="password" id="Password" name="password"></div>
-                    <div class="question"><label for="Confirm Password" class="questionLabel">Confirm Password</label><input type="password"id="Confirm Password" name="confirm password"></div>
+                    <div class="question">
+                        <label for="First Name" class="questionLabel">First Name</label>
+                        <input type="text" id="First Name" name="first name" placeholder="Fulano" required></div>
+                    <div class="question">
+                        <label for="Last Name" class="questionLabel">Last Name</label>
+                        <input type="text" id="Last Name" name="last name" placeholder="De Tal" required></div>
+                    <div class="question">
+                        <label for="Email" class="questionLabel">Email</label>
+                        <input type="email" id="Email" name="email" placeholder="usuario@exemplo.com" required></div>
+                    <div class="question">
+                        <label for="Phone Number" class="questionLabel">Phone Number</label>
+                        <input type="tel"id="Phone Number" name="phone number" placeholder="XX XXXXX-XXXX"></div>
+                    <div class="question">
+                        <label for="Password" class="questionLabel">Password</label>
+                        <input type="password" id="Password" name="password" placeholder="*****" required></div>
+                    <div class="question">
+                        <label for="Confirm Password" class="questionLabel">Confirm Password</label>
+                        <input type="password"id="Confirm Password" name="confirm password" placeholder="*****" required></div>
+                        
+                    <button class="submitButton" type="submit">Submit forms!</button>
+
                 </form>
             </div>
-            <button class="submitButton" type="submit">Submit forms!</button>
             <p class="loginText">Already have an account? <a href="" id="signInLink">Log In!</a></p>
         </div>
     </body>
